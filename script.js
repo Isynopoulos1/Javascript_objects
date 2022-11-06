@@ -478,3 +478,19 @@ const isela = [
     ages.push(2037 - years[i])
   }
   console.log(ages)
+
+  // CONTINUE AND BREAK
+  console.log('--ONLY STRINGS--')
+  for (let i = 0; i < isela.length; i++){
+    if (typeof isela[i] !=='string') continue;
+
+    console.log(isela[i], typeof isela[i])
+  }
+
+    // BREAK WITH NUMBER
+    console.log('--ONLY NUMBER--')
+    for (let i = 0; i < isela.length; i++){
+      if (typeof isela[i] ==='number') break;
+  
+      console.log(isela[i], typeof isela[i])
+    }
