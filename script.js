@@ -397,38 +397,84 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-const markBmi = {
-    weight : 78,
-    height: 1.69,
+// const markBmi = {
+//     weight : 78,
+//     height: 1.69,
 
-    calcBmi: function (){
-        this.bmi = this.weight / (this.height * this.height);
-        return this.bmi;
-    }
-};
-result1= markBmi.calcBmi()
-console.log(result1)
+//     calcBmi: function (){
+//         this.bmi = this.weight / this.height ** 2 ;
+//         return this.bmi;
+//     }
+// };
+// markBmi.calcBmi()
 
 
-const johnBmi = {
-    weight: 92,
-    height: 1.95,
 
-    calcBmi: function (){
-        this.bmi = this.weight / (this.height * this.height);
-        return this.bmi;
-    }
-}
-result2 = johnBmi.calcBmi()
-console.log(result2)
+// const johnBmi = {
+//     weight: 92,
+//     height: 1.95,
 
-const checkBmi = (mark, john) => {
-    if (mark > john){
-        console.log(`the winner is Mark with ${result1} BMI `)
-    }else{
-        console.log(`the winner is John with ${result2} BMI`)
-    }
+//     calcBmi: function (){
+//         this.bmi = this.weight / this.height ** 2;
+//         return this.bmi;
+//     }
+// }
+// johnBmi.calcBmi()
+
+
+// const checkBmi = (mark, john) => {
+//     if (mark > john){
+//         console.log(`the winner is Mark with ${markBmi.bmi} BMI `)
+//     }else{
+//         console.log(`the winner is John with ${johnBmi.bmi} BMI`)
+//     }
     
-}
-result = checkBmi(markBmi, johnBmi)
+// }
+// result = checkBmi(markBmi, johnBmi)
 
+
+
+
+///////////////////////////////////////
+// LOOPS
+
+//FOR LOOPS KEEP RUNNING WHILE CONDITION IS TRUE
+
+// // ********* rep ++ is the same that puts rep = rep + 1   ********* 
+// for (let rep = 1; rep <=10 ; rep ++){
+// console.log(`lifting weights repetitions ${rep}🏋🏼‍♀️`)
+// }
+
+
+const isela = [
+    'Isela',
+    'Alarcón',
+    3000 -1988,
+    'Developer',
+    ['Erwie', 'Doudou', 'Gala', 'Romerita'],
+    true
+  ];
+
+//I CREATED AN EMPTY STRING TO STORED THE VALUE OF EACH TYPE INSIDE DE ARRAY
+  const types=[]
+
+  for (let i = 0; i < isela.length; i++) {
+    //READING FROM ISELA ARRAY
+    console.log(isela[i])
+
+    // //FILLING THE TYPES ARRAY 
+    // types[i] = typeof isela[i];
+    types.push(typeof isela[i])
+  }
+  console.log(types)
+
+
+  // GETTING THE VALUE FROM AN EMPY ARRAY, USING THE PUSH METHOD
+
+  const years = [1991, 2007, 1969, 2020];
+  const ages = [];
+
+  for (let i = 0; i <years.length; i++){
+    ages.push(2037 - years[i])
+  }
+  console.log(ages)
