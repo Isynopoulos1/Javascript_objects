@@ -592,7 +592,7 @@ for (let i = 0; i < bills.length; i++) {
 
   //ADDING THE METHOD PUSH IN THE TIPS ARRAY VALUES
   tips.push(tip);
-  
+
    //ADDING THE METHOD PUSH TO SUM TIPS + BILLS 
   totals.push(tip + bills[i]);
 }
@@ -600,6 +600,24 @@ for (let i = 0; i < bills.length; i++) {
  console.log(bills, tips, totals)
 
 
+// CALCULATE THE AVERAGE
+
+const calcAverage = function(arr){
+  //STABLISHING THE COUNTER IN CERO
+  sum = 0;
+
+  for (let i = 0; i < arr.length; i++) {  
+    // sum = sum + arr [i];
+    sum += arr[i];
+  }
+  return sum / arr.length;
+}
+
+//GETTING THE RESULT OF THE FUNCTION calcAverage WITH THE PARAMETER (totals) from the empty array totals[]
+// TEST:
+// result =calcAverage([1,2,3])
+result =calcAverage(totals)
+console.log(result)
 
 
 
