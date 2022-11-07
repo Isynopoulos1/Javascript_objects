@@ -446,6 +446,56 @@ GOOD LUCK 😀
 // }
 
 
+// const isela = [
+//     'Isela',
+//     'Alarcón',
+//     3000 -1988,
+//     'Developer',
+//     ['Erwie', 'Doudou', 'Gala', 'Romerita'],
+//     true
+//   ];
+
+// //I CREATED AN EMPTY STRING TO STORED THE VALUE OF EACH TYPE INSIDE DE ARRAY
+//   const types=[]
+
+//   for (let i = 0; i < isela.length; i++) {
+//     //READING FROM ISELA ARRAY
+//     console.log(isela[i])
+
+//     // //FILLING THE TYPES ARRAY 
+//     // types[i] = typeof isela[i];
+//     types.push(typeof isela[i])
+//   }
+//   console.log(types)
+
+
+//   // GETTING THE VALUE FROM AN EMPY ARRAY, USING THE PUSH METHOD
+
+//   const years = [1991, 2007, 1969, 2020];
+//   const ages = [];
+
+//   for (let i = 0; i <years.length; i++){
+//     ages.push(2037 - years[i])
+//   }
+//   console.log(ages)
+
+//   // CONTINUE AND BREAK
+//   console.log('--ONLY STRINGS--')
+//   for (let i = 0; i < isela.length; i++){
+//     if (typeof isela[i] !=='string') continue;
+
+//     console.log(isela[i], typeof isela[i])
+//   }
+
+//     // BREAK WITH NUMBER
+//     console.log('--ONLY NUMBER--')
+//     for (let i = 0; i < isela.length; i++){
+//       if (typeof isela[i] ==='number') break;
+  
+//       console.log(isela[i], typeof isela[i])
+//     }
+
+// ARRAY IN REVERSE 5,4,3,2,1,0
 const isela = [
     'Isela',
     'Alarcón',
@@ -455,42 +505,16 @@ const isela = [
     true
   ];
 
-//I CREATED AN EMPTY STRING TO STORED THE VALUE OF EACH TYPE INSIDE DE ARRAY
-  const types=[]
-
-  for (let i = 0; i < isela.length; i++) {
-    //READING FROM ISELA ARRAY
-    console.log(isela[i])
-
-    // //FILLING THE TYPES ARRAY 
-    // types[i] = typeof isela[i];
-    types.push(typeof isela[i])
-  }
-  console.log(types)
-
-
-  // GETTING THE VALUE FROM AN EMPY ARRAY, USING THE PUSH METHOD
-
-  const years = [1991, 2007, 1969, 2020];
-  const ages = [];
-
-  for (let i = 0; i <years.length; i++){
-    ages.push(2037 - years[i])
-  }
-  console.log(ages)
-
-  // CONTINUE AND BREAK
-  console.log('--ONLY STRINGS--')
-  for (let i = 0; i < isela.length; i++){
-    if (typeof isela[i] !=='string') continue;
-
-    console.log(isela[i], typeof isela[i])
+  for (let i = isela.length -1; i >= 0; i--) {
+    console.log(i, isela[i])
+   
   }
 
-    // BREAK WITH NUMBER
-    console.log('--ONLY NUMBER--')
-    for (let i = 0; i < isela.length; i++){
-      if (typeof isela[i] ==='number') break;
-  
-      console.log(isela[i], typeof isela[i])
+  // LOOPS INSIDE A LOOP
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`----STARTING EXERCISE--- ${exercise}`)
+    for(let rep = 1; rep < 6; rep++){
+        console.log(`Exercise ${exercise} repetitions 🏋🏼‍♀️${rep}`)
     }
+        
+}
