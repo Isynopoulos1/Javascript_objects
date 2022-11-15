@@ -565,9 +565,12 @@ GOOD LUCK 😀
 
 const calcTempAmplitude = function (temps) {
   let max = temps[0];
+  let min = temps[0];
   for (let i = 0; i < temps.length; i++) {
-    if (temps[i] > max) max = temps[i];
+    const curTemp = temps[i];
+    if (curTemp > max) max = curTemp;
+    if (curTemp < min) min = curTemp;
   }
-  console.log(max);
+  console.log(max, min);
 };
-calcTempAmplitude([3, 7, 4]);
+calcTempAmplitude([3, 7, 4, 35, 1, -2]);
