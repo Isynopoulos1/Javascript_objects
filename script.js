@@ -4,10 +4,8 @@
 // //     return juice;
 // // }
 
-
 // // const appleJuice = fruitProcessor(3, 8);
 // // console.log(appleJuice)
-
 
 // ///////////////////////////////////////////////////FUNCTION DECLARATION
 // function calcaAge(birthYear){
@@ -30,7 +28,6 @@
 // const age3 = calcAge3(1991);
 // console.log(age3)
 
-
 // /////////////////////////////////////////////////// ARROW FUNCTION WITH ONE PARAMETER
 // const retirement = birthYear => {
 //     const age = 2037 - birthYear;
@@ -47,14 +44,11 @@
 // }
 // console.log(retirement(1991, 'Isela'));
 
-
-
 // ///////////////////////////////////////////////////FUNCTION WITH TWO PARAMETERS
 
 // const cutPieces = function (fruit){
 //     return fruit * 4;
 // }
-
 
 // function fruitProcessor(apples, oranges){
 
@@ -83,15 +77,11 @@
 //         return -1
 
 //     }
-    
+
 //     // return ` ${firstName}, retires in ${retirement} years`
 // }
 // console.log(retirement(1991, 'Isela'));
 // console.log(retirement(1950, 'Erwan'));
-
-
-
-
 
 /*
 Back to the two gymnastics teams, the Dolphins and the Koalas! There is a new gymnastics discipline, which works differently.
@@ -123,8 +113,7 @@ GOOD LUCK 😀
 // const KScore = calcAverage (65, 54, 49)
 
 // const checkWinner = function(avgDolhins, avgKoalas){
-    
-    
+
 //     if (avgDolhins >= 2 * avgKoalas){
 //         console.log(`the winners are Dolphins with ${DScore} score`)
 //     } else if (avgKoalas >= 2 * avgDolhins){
@@ -134,7 +123,6 @@ GOOD LUCK 😀
 //     }}
 
 // result = checkWinner(DScore,KScore )
-
 
 // ///////////////////////////////////////////////////ARRAYS
 
@@ -147,7 +135,6 @@ GOOD LUCK 😀
 // const y = new Array(1991, 1988, 1987);
 
 // console.log(y[0])
-
 
 // //exercise
 
@@ -169,8 +156,6 @@ GOOD LUCK 😀
 // const ages = [calcAge2(years[0]),calcAge2(years[1]),calcAge2(years[years.length -1])]
 // console.log(ages)
 
-
-
 // // ///////////////////////////////////////////////////METHODS
 
 // //PUSH // TO ADD ELEMENTS IN THE END OF THE ARRAY
@@ -181,7 +166,6 @@ GOOD LUCK 😀
 // //PUSH // TO ADD ELEMENTS IN THE BEGGINING OF THE ARRAY
 // friends.unshift('John')
 // console.log(friends)
-
 
 // //POP // TO REMOVE ELEMENTS IN THE LAST ELEMENT OF THE ARRAY
 // friends.pop()
@@ -196,8 +180,6 @@ GOOD LUCK 😀
 // //indexOf // TO KNOW THE POSITION OF AN ELEMENT IN THE ARRAY
 // console.log(friends.indexOf('Michael'));
 
-
-
 // //INCLUDES // TO KNOW IF AN ELEMENT IS IN THE ARRAY AND RETURN A BOOLEAN TRUE OR FALSE
 // console.log(friends.includes('Michael'))
 // console.log(friends.includes('Bob'))
@@ -205,8 +187,6 @@ GOOD LUCK 😀
 // if (friends.includes('Peter')){
 //     console.log('you have a friend called peter')
 // }
-
-
 
 ///////////////////////////////////////
 // Coding Challenge #2
@@ -226,46 +206,39 @@ HINT: Remember that an array needs a value in each position, and that value can 
 GOOD LUCK 😀
 */
 
-
 // const bill = 430;
 // const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 // console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
-
-
-
-
-
 
 ///////////////////////////////////////
 // OPTION 1: IF STATEMENT
 
 // const calcTip = (bill) => {
-  
+
 //     if(bill <= 300 && bill >= 50){
 //       return bill * 0.15;
 //     } else {
 //       return bill * 0.2
 //     }
-  
+
 //   }
 // console.log(calcTip(430))
-  ///////////////////////////////////////
-  // OPTION 2: TERNARY OPERATOR
-  
-  // const calcTip2= (bill) => {
-  //   return bill <= 300 && bill >= 50 
-  //   ? bill * 0.15 
-  //   : bill * 0.2;
-  // }
-  // console.log(calcTip2(430))
-  
-   
-  // //TEST DATA: Test for bill values 275, 40 and 430
-  
+///////////////////////////////////////
+// OPTION 2: TERNARY OPERATOR
+
+// const calcTip2= (bill) => {
+//   return bill <= 300 && bill >= 50
+//   ? bill * 0.15
+//   : bill * 0.2;
+// }
+// console.log(calcTip2(430))
+
+// //TEST DATA: Test for bill values 275, 40 and 430
+
 //   const bills =[275, 40, 430]
 //   const tips = [calcTip(bills[0]),calcTip(bills[1]), calcTip(bills[2])]
 //   const totals = [bills[0]+ tips[0],bills[1]+ tips[1], bills[2]+ tips[2]]
-  
+
 //   // TEST WITH THE TOTAL
 //   console.log(bills, tips, totals)
 
@@ -277,7 +250,7 @@ GOOD LUCK 😀
 //     'Developer',
 //     ['Erwie', 'Doudou', 'Gala', 'Romerita']
 //   ];
-  
+
 //   // ITS CALLED "LITERAL SINTAX" BECAUSE LITERALLY WRITE THE CONTENT OF THE OBJECT
 //   const isela = {
 //     firstName:'Isela',
@@ -286,7 +259,7 @@ GOOD LUCK 😀
 //     job : 'developer',
 //     family: ['Erwie', 'Doudou', 'Gala', 'Romerita']
 //   };
-  
+
 //   console.log(isela.lastName)
 //   console.log(isela['lastName'])
 
@@ -294,7 +267,6 @@ GOOD LUCK 😀
 // const nameKey = 'Name';
 // console.log(isela['first' + nameKey]);
 // console.log(isela['last' + nameKey]);
-
 
 // const interestedIn = prompt('What are u want to know about isela? Choose between: firstName, lastName, age, job and family ')
 // // IF - ELSE STATEMENT
@@ -306,14 +278,10 @@ GOOD LUCK 😀
 // //  isela.location = 'Barcelona';
 // //  isela['instagram'] = '@Isynnopoulos'
 
-
- //MINI CHALLENGE
- // Jonas has 3 family members and his best friend is Michael
+//MINI CHALLENGE
+// Jonas has 3 family members and his best friend is Michael
 
 //  console.log(isela.firstName, 'has',isela.family.length, 'family members, and his favourite is', isela.family[0])
-
-
-
 
 //   const isela = {
 //     firstName:'Isela',
@@ -323,11 +291,10 @@ GOOD LUCK 😀
 //     family: ['Erwie', 'Doudou', 'Gala', 'Romerita'],
 //     hasDriversLicense: true,
 
-
 // //FIRST VERSION
 
 // //     calcAge:(birthday) => {
-// //         return 2037 - birthday  
+// //         return 2037 - birthday
 // //     }
 // // };
 // //   console.log(isela.calcAge(2000))
@@ -338,23 +305,17 @@ GOOD LUCK 😀
 //         return 3000 - this.birthday;
 //     }
 //   };
-   
-
 
 //   console.log(isela.calcAge());
-//   console.log(isela.calcAge()); 
-//   console.log(isela.calcAge());  
+//   console.log(isela.calcAge());
+//   console.log(isela.calcAge());
 //   console.log(isela.calcAge());
 
-
-  
-  
- // this sintax is the same that puts the property of isela's object
+// this sintax is the same that puts the property of isela's object
 
 //  const calcAge = birthday => {
 //     return 2037 - birthday
 //  }
-
 
 // const isela = {
 //     firstName:'Isela',
@@ -375,12 +336,10 @@ GOOD LUCK 😀
 //     }
 // };
 
-
 // isela.calcAge()
 // isela.getSummary()
 // console.log(isela.age)
 // console.log(isela.hasDriversLicense)
-
 
 ///////////////////////////////////////
 // Coding Challenge #3
@@ -408,8 +367,6 @@ GOOD LUCK 😀
 // };
 // markBmi.calcBmi()
 
-
-
 // const johnBmi = {
 //     weight: 92,
 //     height: 1.95,
@@ -421,30 +378,25 @@ GOOD LUCK 😀
 // }
 // johnBmi.calcBmi()
 
-
 // const checkBmi = (mark, john) => {
 //     if (mark > john){
 //         console.log(`the winner is Mark with ${markBmi.bmi} BMI `)
 //     }else{
 //         console.log(`the winner is John with ${johnBmi.bmi} BMI`)
 //     }
-    
+
 // }
 // result = checkBmi(markBmi, johnBmi)
-
-
-
 
 ///////////////////////////////////////
 // LOOPS
 
 //FOR LOOPS KEEP RUNNING WHILE CONDITION IS TRUE
 
-// // ********* rep ++ is the same that puts rep = rep + 1   ********* 
+// // ********* rep ++ is the same that puts rep = rep + 1   *********
 // for (let rep = 1; rep <=10 ; rep ++){
 // console.log(`lifting weights repetitions ${rep}🏋🏼‍♀️`)
 // }
-
 
 // const isela = [
 //     'Isela',
@@ -462,12 +414,11 @@ GOOD LUCK 😀
 //     //READING FROM ISELA ARRAY
 //     console.log(isela[i])
 
-//     // //FILLING THE TYPES ARRAY 
+//     // //FILLING THE TYPES ARRAY
 //     // types[i] = typeof isela[i];
 //     types.push(typeof isela[i])
 //   }
 //   console.log(types)
-
 
 //   // GETTING THE VALUE FROM AN EMPY ARRAY, USING THE PUSH METHOD
 
@@ -491,7 +442,7 @@ GOOD LUCK 😀
 //     console.log('--ONLY NUMBER--')
 //     for (let i = 0; i < isela.length; i++){
 //       if (typeof isela[i] ==='number') break;
-  
+
 //       console.log(isela[i], typeof isela[i])
 //     }
 
@@ -507,7 +458,7 @@ GOOD LUCK 😀
 
 //   for (let i = isela.length -1; i >= 0; i--) {
 //     console.log(i, isela[i])
-   
+
 //   }
 
 //   // LOOPS INSIDE A LOOP
@@ -516,7 +467,7 @@ GOOD LUCK 😀
 //     for(let rep = 1; rep < 6; rep++){
 //         console.log(`Exercise ${exercise} repetitions 🏋🏼‍♀️${rep}`)
 //     }
-        
+
 // }
 
 // //FOR LOOP
@@ -531,10 +482,9 @@ GOOD LUCK 😀
 //     rep++;
 // }
 
-
 // ///////////////////////////////////////
 // // RANDOM MODULE AND TRUNC MODULE
-// // WE USED TRUNC TO ROUND THE NUMBER 
+// // WE USED TRUNC TO ROUND THE NUMBER
 
 // let dice = Math.trunc(Math.random() * 6 )+ 1;
 // console.log(dice)
@@ -543,7 +493,7 @@ GOOD LUCK 😀
 //     console.log(`you rolled a ${dice}`)
 //     dice = Math.trunc(Math.random() * 6 )+ 1;
 //     if(dice === 6) console.log('You rolled the magic number ')
-   
+
 // }
 ///////////////////////////////////////
 // Coding Challenge #4
@@ -567,65 +517,57 @@ HINT: Call calcTip in the loop and use the push method to add values to the tips
 GOOD LUCK 😀
 */
 
+// //CALC TIP FUNCTION
+// const calcTip2 = (bill) => {
+//   return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+// };
+// // console.log(calcTip2(22))
 
-//CALC TIP FUNCTION
-const calcTip2= (bill) => {
-  return bill <= 300 && bill >= 50 
-  ? bill * 0.15 
-  : bill * 0.2;
-}
-// console.log(calcTip2(22))
+// //CREATING BILLS ARRAY AND EMPTY ARRAYS OF TIPS AND TOTALS
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
 
+// // CREATING A FOR LOOP TO GET THE BILLS FOR EACH VALUE IN THE BILLS ARRAY
 
+// for (let i = 0; i < bills.length; i++) {
+//   const tip = calcTip2(bills[i]);
 
+//   //ADDING THE METHOD PUSH IN THE TIPS ARRAY VALUES
+//   tips.push(tip);
 
+//   //ADDING THE METHOD PUSH TO SUM TIPS + BILLS
+//   totals.push(tip + bills[i]);
+// }
+// // PRINTINS THE FINAL VALUES
+// console.log(bills, tips, totals);
 
-//CREATING BILLS ARRAY AND EMPTY ARRAYS OF TIPS AND TOTALS
-const bills =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
-const tips=[];
-const totals =[];
+// // CALCULATE THE AVERAGE
 
-// CREATING A FOR LOOP TO GET THE BILLS FOR EACH VALUE IN THE BILLS ARRAY 
+// const calcAverage = function (arr) {
+//   //STABLISHING THE COUNTER IN CERO
+//   sum = 0;
 
-for (let i = 0; i < bills.length; i++) {
-  const tip = calcTip2 (bills[i])
+//   for (let i = 0; i < arr.length; i++) {
+//     // sum = sum + arr [i];
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// };
 
-  //ADDING THE METHOD PUSH IN THE TIPS ARRAY VALUES
-  tips.push(tip);
+// //GETTING THE RESULT OF THE FUNCTION calcAverage WITH THE PARAMETER (totals) from the empty array totals[]
+// // TEST:
+// // result =calcAverage([1,2,3])
+// const result = calcAverage(totals);
+// console.log(result);
 
-   //ADDING THE METHOD PUSH TO SUM TIPS + BILLS 
-  totals.push(tip + bills[i]);
-}
-// PRINTINS THE FINAL VALUES 
- console.log(bills, tips, totals)
+//// CALCULATING TEMPERATURE IN ARRAY
 
-
-// CALCULATE THE AVERAGE
-
-const calcAverage = function(arr){
-  //STABLISHING THE COUNTER IN CERO
-  sum = 0;
-
-  for (let i = 0; i < arr.length; i++) {  
-    // sum = sum + arr [i];
-    sum += arr[i];
+const calcTempAmplitude = function (temps) {
+  let max = temps[0];
+  for (let i = 0; i < temps.length; i++) {
+    if (temps[i] > max) max = temps[i];
   }
-  return sum / arr.length;
-}
-
-//GETTING THE RESULT OF THE FUNCTION calcAverage WITH THE PARAMETER (totals) from the empty array totals[]
-// TEST:
-// result =calcAverage([1,2,3])
-result =calcAverage(totals)
-console.log(result)
-
-
-
-
-
-
-
-
-
-
-   
+  console.log(max);
+};
+calcTempAmplitude([3, 7, 4]);
