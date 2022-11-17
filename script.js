@@ -704,8 +704,22 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 // 1) ARRAY TRANSFORMED INTO STRING
 // console.log(arr.toString());
 
-const arr = [17, 21, 23];
-console.log(arr.toString());
-arr.forEach((element) => {
-  console.log(element.toString());
-});
+const data1 = [17, 21, 23];
+
+// arr.forEach((element) => {
+//   const string_a = element.toString();
+//   return string_a;
+// });
+
+const printForecast = function (arr) {
+  let str = "";
+  for (let i = 0; i < arr.length; i++) {
+    str = str + `${arr[i]} ºC`;
+  }
+
+  // PRINTING THE RESULT
+  console.log(str);
+};
+
+// CALLING THE FUNCTION
+printForecast(data1);
